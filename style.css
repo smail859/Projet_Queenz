@@ -1,0 +1,305 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+/* Debut Navbar */
+nav
+{
+   
+    background: #5a2491;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo
+{
+    color: #fff;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul
+{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li
+{
+    display:inline;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a
+{
+    color: #fff;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover
+{
+    background: #1b9bff;
+    transition: .5s;
+}
+.checkbtn
+{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check
+{
+    display: none;
+}
+
+@media (max-width: 952px)
+{
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px)
+{
+    .checkbtn{
+        display:block;
+    }
+    
+    ul
+    {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+    
+    a:hoover,a.active{
+        background: none;
+        color:#0082e6;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+/* Fin de la Navbar */
+
+/* Card */
+
+.card
+{
+    display: flex;
+    margin-top: 50px;
+    margin: 20px;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+    color: rgb(1, 1, 36);
+
+}
+
+/* Fin Card */
+
+/* Debut Mint  */
+.container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    margin-top: 50px;
+}
+
+.btn-1
+{
+    width: 150px;
+    height: 60px;
+    border: 1px solid;
+    color: rgb(0, 0, 0);
+    background-color:#5a2491;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #7f00ff;
+    transition: ease-out 0.3s;
+    font-size: 2rem;
+    outline: none;
+     
+}
+
+.btn-1:hover{
+    box-shadow: inset 300px 0 0 0 #7f00ff;
+    cursor: pointer;
+    color: #000;
+    
+}
+
+/* Fin  Mint  */
+
+/* Footer  */
+footer
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:#0b0313;
+    height:auto ;
+    width: 100vw;
+    font-family: "Open Sans";
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content  h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 5px auto;
+    line-height: 5px;
+    font-size: 14px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.social a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.social a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.social a:hover i{
+    color: aqua;
+}
+
+.footer-bottom 
+{
+    background: rgb(41, 32, 32);
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+/* Fin du Footer  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
